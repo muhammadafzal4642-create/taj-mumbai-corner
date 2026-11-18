@@ -1,0 +1,6 @@
+{
+  "name": "Taj Mumbai Corner – Premium Restaurant",
+  "description": "Luxury Indian restaurant website demonstration for Taj Mumbai Corner featuring authentic Mumbai cuisine, signature biryanis, clay oven tandoor, table reservations, and WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

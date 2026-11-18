@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-burgundy: #58151D;
+    --color-dark-red: #791E29;
+    --color-gold: #D5A64A;
+    --color-gold-light: #F5D280;
+    --color-gold-dark: #A87C29;
+    --color-cream: #FFF8EB;
+    --color-charcoal: #191515;
+    --color-charcoal-deep: #120E0E;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #191515;
+    color: #FFF8EB;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-display-royal {
+    font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Custom Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF8EB 0%, #F5D280 40%, #D5A64A 75%, #A87C29 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-text-pure {
+  background: linear-gradient(135deg, #F9E7B9 0%, #D5A64A 50%, #B88523 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  border-color: rgba(213, 166, 74, 0.35);
+  box-shadow: 0 0 20px rgba(213, 166, 74, 0.08);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(213, 166, 74, 0.65);
+  box-shadow: 0 0 25px rgba(213, 166, 74, 0.18);
+}
+
+/* Luxury Card Background */
+.card-luxury {
+  background: linear-gradient(180deg, rgba(88, 21, 29, 0.45) 0%, rgba(25, 21, 21, 0.85) 100%);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(213, 166, 74, 0.2);
+}
+
+.card-luxury-hover:hover {
+  border-color: rgba(213, 166, 74, 0.5);
+  transform: translateY(-3px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Indian Jali Lattice Pattern Overlay */
+.bg-jali-pattern {
+  background-image: radial-gradient(rgba(213, 166, 74, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #191515;
+}
+::-webkit-scrollbar-thumb {
+  background: #58151D;
+  border-radius: 4px;
+  border: 1px solid rgba(213, 166, 74, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #791E29;
+}
